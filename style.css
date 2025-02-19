@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Card Grid */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Typeform Survey Section */
+.survey-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.survey-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Typeform Embed */
+.typeform-embed {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
