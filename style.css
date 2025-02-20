@@ -1,4 +1,8 @@
-/* General Styles */
+/* Importing component styles */
+@import url("components/card.css");
+@import url("components/grid.css");
+
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -7,7 +11,7 @@ body {
     padding: 20px;
 }
 
-/* Card Grid */
+/* Grid layout */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +19,7 @@ body {
     gap: 20px;
 }
 
-/* Card Styling */
+/* Individual card styles */
 .card {
     display: flex;
     align-items: center;
@@ -25,6 +29,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
+    margin: 15px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -32,37 +37,27 @@ body {
     transform: scale(1.05);
 }
 
+/* Card image */
 .card img {
     width: 80px;
     height: 80px;
     border-radius: 10px;
     object-fit: cover;
-    margin-right: 15px;
 }
 
+/* Card text */
 .card h3 {
+    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Typeform Survey Section */
+/* Survey container */
 .survey-container {
-    margin-top: 30px;
-    padding: 20px;
     background: white;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
     display: inline-block;
-}
-
-.survey-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Typeform Embed */
-.typeform-embed {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
 }
