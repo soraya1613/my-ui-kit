@@ -14,9 +14,11 @@ body {
 /* Grid layout */
 .cards {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* Individual card styles */
@@ -28,8 +30,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
-    margin: 15px;
+    width: 280px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -43,13 +44,14 @@ body {
     height: 80px;
     border-radius: 10px;
     object-fit: cover;
+    margin-right: 20px;
 }
 
 /* Card text */
 .card h3 {
-    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;
+    margin: 0;
 }
 
 /* Survey container */
@@ -61,3 +63,4 @@ body {
     margin-top: 30px;
     display: inline-block;
 }
+
