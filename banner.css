@@ -1,13 +1,21 @@
 .banner {
-    background-image: linear-gradient(-225deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url(../../images/students.avif);
-    color: white;
-    padding: 150px 0px;
+    background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%), 
+                      url("../images/banner.jpg"); /* Correct path */
     background-size: cover;
     background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
 }
 
 .banner h1 {
     font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .banner h2 {
@@ -15,4 +23,19 @@
     font-weight: lighter;
     opacity: 0.8;
     margin-bottom: 40px;
+}
+
+.btn-blue {
+    display: inline-block;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-blue:hover {
+    background-color: #4b3fd9;
 }
