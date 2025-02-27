@@ -1,66 +1,21 @@
-/* Importing component styles */
-@import url("components/card.css");
-@import url("components/grid.css");
+@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
 
-/* General styles */
+@import url(components/container.css);
+@import url(components/avatar.css);
+@import url(components/button.css);
+@import url(components/banner.css);
+@import url(components/card.css);
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    text-align: center;
-    margin: 0;
-    padding: 20px;
+    font-family: "Lora", serif;
+    font-size: 18px;
+    margin: 0px;
 }
 
-/* Grid layout */
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Individual card styles */
-.card {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 280px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-/* Card image */
-.card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 20px;
-}
-
-/* Card text */
-.card h3 {
-    font-size: 20px;
+h1, h2, h3 {
+    font-family: "Roboto", serif;
     font-weight: bold;
-    margin: 0;
 }
 
-/* Survey container */
-.survey-container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-    display: inline-block;
+a {
+    text-decoration: none;
 }
-
