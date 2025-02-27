@@ -1,21 +1,66 @@
-@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+/* Importation des fichiers CSS */
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
 
-@import url(components/container.css);
-@import url(components/avatar.css);
-@import url(components/button.css);
-@import url(components/banner.css);
-@import url(components/card.css);
 body {
     font-family: "Lora", serif;
     font-size: 18px;
-    margin: 0px;
+    margin: 0;
 }
 
+/* Styles des titres */
 h1, h2, h3 {
     font-family: "Roboto", serif;
     font-weight: bold;
 }
 
+/* Suppression du soulignement des liens */
 a {
     text-decoration: none;
+}
+
+/* Conteneur des cartes */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Ajout d'espace en bas pour l'aération */
+}
+
+/* Styles des cartes */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Rend la carte cliquable */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Style des images dans les cartes */
+.card img {
+    width: 200px;
+    height: 150px; /* Fixe une hauteur uniforme */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Style du texte des cartes */
+.card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
